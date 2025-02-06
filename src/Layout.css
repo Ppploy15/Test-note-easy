@@ -1,0 +1,123 @@
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+@media(max-width:1205px) {
+
+    .mynote{
+        padding: 0px;
+    }
+
+    .mynote h2{
+        margin-left: 20px;
+    }
+
+    .layout{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tabbar{
+        width: 100vw;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 0;
+    }
+
+    .tabbar .title{
+        margin: 0;
+        margin-left: 50px;
+    }
+
+    .tabs{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        margin-right: 50px;
+        font-size: 24px;
+        box-sizing: border-box;
+    }
+    
+    .tab.active {
+       border-radius: 10px;
+      }
+
+    
+}
+
+
+@media(max-width:980px) {
+
+    .layout-sort {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .mynote .notes{
+        grid-template-columns: 1fr;
+    }
+
+
+    .category p {
+        width: 180px;
+        font-size: 18px;
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+        color: #E7F0DC;
+        background-color: #729762;
+        border-radius: 10px;
+        left: 0;
+        height: 30px;
+        justify-content: space-around;
+        position: relative;
+        margin: 0;
+    }
+
+    .category p img {
+        height: 20px;
+        object-fit: cover;
+
+    }
+
+    
+
+    .submenu {
+        position: absolute;
+        pointer-events: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        opacity: 0;
+        position: absolute;
+    }
+
+    .category:hover .submenu {
+        width: 180px;
+        padding: 5px 10px;
+        pointer-events: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        opacity: 1;
+        pointer-events: all;
+        background-color: #E1ECC8;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+
+
+
+
+
+}
+
+@media(max-width:710px){
+    .layout-sort{
+        grid-template-columns: 1fr 1fr;
+    }
+}

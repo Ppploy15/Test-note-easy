@@ -1,0 +1,38 @@
+.tabbar {
+    background-color: #729762;
+    color: #E7F0DC;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    width: 400px;
+  }
+  
+  .tabbar .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+  
+  .tabs {
+    margin-top: 30px;
+    margin-left: 60px;
+  font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .tab {
+    padding: 8px 12px;
+    border-radius: 15px 0 0 15px;
+    text-decoration: none;
+    color: #E7F0DC;
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab.active {
+    background-color: #E7F0DC;
+    color: #597445;
+  }
+  
