@@ -44,7 +44,7 @@ function Signup() {
             <img className='circle' src='/images/circel.png' alt="Background" />
             <div className='box-signup'>
                 <div className='box-signup-1'>
-                    <Link to={'/login'} className='left'>Login</Link>
+                    <Link to={'/'} className='left'>Login</Link>
                     <div className='button-signup'>Sign up</div>
                 </div>
 

@@ -34,7 +34,7 @@ const Tabbar = () => {
                     + Add Note
                 </Link>
                 <Link to="/login"
-                    className={`tab ${location.pathname === '/login' ? 'active' : ''}`}>
+                    className={`tab ${location.pathname === '/' ? 'active' : ''}`}>
                     Log Out
                 </Link>
             </div>
